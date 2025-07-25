@@ -2,98 +2,100 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skincare GlowUp</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4/animate.min.css"/>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" href="icon/logo.png" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <img src="icon/logo.png" alt="Logo" class="logo animate__animated animate__fadeInDown" />
-      <nav>
-        <ul>
-          <li><a href="#produk">Produk</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#kontak">Kontak</a></li>
-        </ul>
-      </nav>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="icon/logo.png" alt="GlowUp">
+      <span>GlowUp</span>
     </div>
+    <nav>
+      <a href="#produk">Produk</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
   </header>
 
-  <!-- Banner / Hero -->
-  <section class="banner">
-    <div class="slide active animate__animated animate__fadeIn">
-      <img src="banner/banner1.jpg" alt="Banner 1" />
-      <div class="caption">
-        <h1 class="animate__animated animate__fadeInUp">Kulit Cerah Alami</h1>
-        <p>Perawatan alami untuk kulit sehat & glowing</p>
-        <a href="#produk" class="cta-button">Lihat Produk</a>
-      </div>
+  <!-- Hero Section -->
+  <section class="hero animate__animated animate__fadeIn">
+    <div class="hero-text">
+      <h1>Rahasia Kulit Cerah Alami</h1>
+      <p>Temukan perawatan wajah terbaik untuk kulit sehat & glowing bersama GlowUp.</p>
+      <a href="#produk" class="btn-utama">Lihat Produk</a>
+    </div>
+    <div class="hero-img">
+      <img src="produk/hero.jpg" alt="Produk Andalan">
     </div>
   </section>
 
   <!-- Produk -->
   <section id="produk" class="produk-section">
-    <h2 class="animate__animated animate__fadeInDown">Produk Unggulan</h2>
-    <div id="produk-container" class="produk-container"></div>
+    <h2 class="section-title">🌿 Produk Unggulan</h2>
+    <div id="produk-container" class="produk-wrapper"></div>
   </section>
+
+  <!-- Popup Detail Produk -->
+  <div id="produk-popup" class="popup-overlay"></div>
 
   <!-- Testimoni -->
   <section id="testimoni" class="testimoni-section">
-    <h2 class="animate__animated animate__fadeInDown">Apa Kata Mereka</h2>
-    <div id="testimoni-container" class="testimoni-container"></div>
+    <h2 class="section-title">💬 Testimoni Pelanggan</h2>
+    <div id="testimoni-container" class="testimoni-wrapper"></div>
   </section>
 
   <!-- FAQ -->
   <section id="faq" class="faq-section">
-    <h2 class="animate__animated animate__fadeInDown">Pertanyaan Umum</h2>
-    <div class="faq">
-      <details><summary>Aman untuk semua jenis kulit?</summary><p>Ya, produk kami telah teruji secara dermatologis dan cocok untuk semua jenis kulit.</p></details>
-      <details><summary>Apakah tersedia di marketplace?</summary><p>Ya, kamu bisa temukan produk kami di Tokopedia & Shopee.</p></details>
-      <details><summary>Berapa lama hasil terlihat?</summary><p>Biasanya dalam 7-14 hari penggunaan rutin.</p></details>
+    <h2 class="section-title">❓ FAQ</h2>
+    <div class="faq-wrapper">
+      <details>
+        <summary>Apakah aman untuk semua jenis kulit?</summary>
+        <p>Ya, semua produk kami dermatologically tested dan cocok untuk semua jenis kulit.</p>
+      </details>
+      <details>
+        <summary>Bagaimana cara pemesanannya?</summary>
+        <p>Silakan hubungi kami melalui WhatsApp atau DM Instagram untuk pemesanan.</p>
+      </details>
+      <details>
+        <summary>Apakah bisa COD?</summary>
+        <p>Saat ini kami hanya menerima pembayaran transfer & e-wallet.</p>
+      </details>
     </div>
   </section>
 
   <!-- Kontak -->
   <section id="kontak" class="kontak-section">
-    <h2 class="animate__animated animate__fadeInDown">Hubungi Kami</h2>
-    <p>Instagram: @glowupskincare | WhatsApp: 08xxxxxxx</p>
+    <h2 class="section-title">📞 Hubungi Kami</h2>
+    <div class="kontak-box">
+      <a href="https://wa.me/6281234567890" target="_blank" class="btn-wa">
+        <img src="icon/wa.png" alt="WhatsApp"> Chat WhatsApp
+      </a>
+      <a href="https://instagram.com/glowup.id" target="_blank" class="btn-ig">
+        <img src="icon/ig.png" alt="Instagram"> DM Instagram
+      </a>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 GlowUp Skincare. All Rights Reserved.</p>
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="icon/logo.png" alt="GlowUp">
+      <p>&copy; 2025 GlowUp Skincare. All rights reserved.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#produk">Produk</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontak">Kontak</a>
+    </div>
   </footer>
 
-  <!-- Popup -->
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <span class="close-btn" onclick="closePopup()">&times;</span>
-      <h3 id="popup-nama"></h3>
-      <p><strong>Kegunaan:</strong> <span id="popup-kegunaan"></span></p>
-      <p><strong>Cara Pakai:</strong> <span id="popup-pakai"></span></p>
-      <p><strong>Keunggulan:</strong> <span id="popup-unggul"></span></p>
-      <a href="#" class="cta-button">Beli Sekarang</a>
-    </div>
-  </div>
-
-  <script src="produk.js"></script>
-  <script src="testimoni.js"></script>
-  <script>
-    function openPopup(data) {
-      document.getElementById('popup-nama').textContent = data.nama;
-      document.getElementById('popup-kegunaan').textContent = data.kegunaan;
-      document.getElementById('popup-pakai').textContent = data.cara_pakai;
-      document.getElementById('popup-unggul').textContent = data.keunggulan;
-      document.getElementById('popup').style.display = 'block';
-    }
-
-    function closePopup() {
-      document.getElementById('popup').style.display = 'none';
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
