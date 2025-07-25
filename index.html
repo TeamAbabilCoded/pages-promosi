@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skincare GlowUp</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4/animate.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="icon/logo.png" alt="Logo" class="logo animate__animated animate__fadeInDown" />
+      <nav>
+        <ul>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Banner / Hero -->
+  <section class="banner">
+    <div class="slide active animate__animated animate__fadeIn">
+      <img src="banner/banner1.jpg" alt="Banner 1" />
+      <div class="caption">
+        <h1 class="animate__animated animate__fadeInUp">Kulit Cerah Alami</h1>
+        <p>Perawatan alami untuk kulit sehat & glowing</p>
+        <a href="#produk" class="cta-button">Lihat Produk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk -->
+  <section id="produk" class="produk-section">
+    <h2 class="animate__animated animate__fadeInDown">Produk Unggulan</h2>
+    <div id="produk-container" class="produk-container"></div>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="testimoni-section">
+    <h2 class="animate__animated animate__fadeInDown">Apa Kata Mereka</h2>
+    <div id="testimoni-container" class="testimoni-container"></div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq-section">
+    <h2 class="animate__animated animate__fadeInDown">Pertanyaan Umum</h2>
+    <div class="faq">
+      <details><summary>Aman untuk semua jenis kulit?</summary><p>Ya, produk kami telah teruji secara dermatologis dan cocok untuk semua jenis kulit.</p></details>
+      <details><summary>Apakah tersedia di marketplace?</summary><p>Ya, kamu bisa temukan produk kami di Tokopedia & Shopee.</p></details>
+      <details><summary>Berapa lama hasil terlihat?</summary><p>Biasanya dalam 7-14 hari penggunaan rutin.</p></details>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="kontak-section">
+    <h2 class="animate__animated animate__fadeInDown">Hubungi Kami</h2>
+    <p>Instagram: @glowupskincare | WhatsApp: 08xxxxxxx</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GlowUp Skincare. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <h3 id="popup-nama"></h3>
+      <p><strong>Kegunaan:</strong> <span id="popup-kegunaan"></span></p>
+      <p><strong>Cara Pakai:</strong> <span id="popup-pakai"></span></p>
+      <p><strong>Keunggulan:</strong> <span id="popup-unggul"></span></p>
+      <a href="#" class="cta-button">Beli Sekarang</a>
+    </div>
+  </div>
+
+  <script src="produk.js"></script>
+  <script src="testimoni.js"></script>
+  <script>
+    function openPopup(data) {
+      document.getElementById('popup-nama').textContent = data.nama;
+      document.getElementById('popup-kegunaan').textContent = data.kegunaan;
+      document.getElementById('popup-pakai').textContent = data.cara_pakai;
+      document.getElementById('popup-unggul').textContent = data.keunggulan;
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
