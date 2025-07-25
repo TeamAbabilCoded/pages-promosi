@@ -1,0 +1,20 @@
+[
+  {
+    "nama": "Putri Amelia",
+    "avatar": "avatar/user1.jpg",
+    "kota": "Jakarta",
+    "pesan": "Produk ini benar-benar mengubah kulit aku! Sekarang jadi lebih cerah dan lembut. Highly recommended!"
+  },
+  {
+    "nama": "Rina Marlina",
+    "avatar": "avatar/user3.jpg",
+    "kota": "Bandung",
+    "pesan": "Awalnya ragu, tapi setelah 2 minggu pakai, jerawatku mulai reda. Terima kasih banyak!"
+  },
+  {
+    "nama": "Nadia Prasetya",
+    "avatar": "avatar/user2.jpg",
+    "kota": "Surabaya",
+    "pesan": "Paket datang cepat, kemasan premium, dan hasilnya terlihat. Mantap banget buat skincare harian."
+  }
+]
