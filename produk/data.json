@@ -1,0 +1,29 @@
+[
+  {
+    "id": "produk1",
+    "nama": "Glow Serum",
+    "harga": "Rp 79.000",
+    "gambar": "produk/glow-serum.jpg",
+    "kegunaan": "Mencerahkan kulit wajah dan menyamarkan noda hitam.",
+    "cara_pemakaian": "Gunakan pada wajah bersih, pagi dan malam hari sebelum moisturizer.",
+    "keunggulan": "Mengandung vitamin C, ringan di kulit, cocok untuk semua jenis kulit."
+  },
+  {
+    "id": "produk2",
+    "nama": "Acne Toner",
+    "harga": "Rp 65.000",
+    "gambar": "produk/acne-toner.jpg",
+    "kegunaan": "Mengurangi jerawat dan mengontrol minyak berlebih.",
+    "cara_pemakaian": "Tuangkan ke kapas, usapkan secara merata setelah cuci muka.",
+    "keunggulan": "Mengandung salicylic acid dan tea tree oil."
+  },
+  {
+    "id": "produk3",
+    "nama": "Hydra Moist Cream",
+    "harga": "Rp 89.000",
+    "gambar": "produk/hydra-moist.jpg",
+    "kegunaan": "Melembapkan kulit sepanjang hari.",
+    "cara_pemakaian": "Aplikasikan secukupnya setelah penggunaan toner dan serum.",
+    "keunggulan": "Formula ringan, tidak lengket, cocok untuk kulit sensitif."
+  }
+]
