@@ -1,0 +1,22 @@
+[
+  {
+    "id": "p1",
+    "nama": "Brightening Serum",
+    "harga": "Rp 79.000",
+    "gambar": "produk1.jpg",
+    "deskripsi": "Serum untuk mencerahkan kulit kusam.",
+    "cara_pakai": "Gunakan pagi dan malam setelah toner.",
+    "manfaat": "Mencerahkan, meratakan warna kulit.",
+    "keunggulan": "Mengandung Niacinamide 10% & bebas paraben"
+  },
+  {
+    "id": "p2",
+    "nama": "Acne Treatment Gel",
+    "harga": "Rp 65.000",
+    "gambar": "produk2.jpg",
+    "deskripsi": "Gel untuk meredakan jerawat aktif.",
+    "cara_pakai": "Oleskan tipis pada area berjerawat.",
+    "manfaat": "Mengempeskan jerawat, mengurangi kemerahan.",
+    "keunggulan": "Dengan Salicylic Acid & Tea Tree"
+  }
+]
